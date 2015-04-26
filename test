@@ -1,11 +1,14 @@
 import java.util.*;
 
 public class test{
+	//main method
 	public static void main(String[] args) throws CloneNotSupportedException{
-
+		
+		//建立及拷貝一個物件
 		MyStack stack = new MyStack();
 		MyStack stack1 = (MyStack) (stack.clone());
 		
+		//比較物件一與物件二
 		System.out.println(stack == stack1);
 		System.out.println(stack.list == stack1.list);
 	}
