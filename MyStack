@@ -37,7 +37,9 @@ class MyStack implements Cloneable {
 	@SuppressWarnings("unchecked")
 	public Object clone(){
 		try{
+			//Perfore a shallow copy
 			MyStack a = (MyStack) super.clone();
+			//deep copy on list
 			a.list = (ArrayList<Object>)(list.clone());
 
 			return a;
