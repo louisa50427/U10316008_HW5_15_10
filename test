@@ -11,15 +11,15 @@ public class test{
 			stack.push('B');
 			stack.push('C');
 		MyStack stack1 = (MyStack) (stack.clone());
-			stack1.push('A');
-			stack1.push('C');
+			stack1.push('D');
+			stack1.push('E');
 		
 		//印出2個物件的size
 		System.out.println(stack.getSize());
 		System.out.println(stack1.getSize());
 		//跑一個迴圈印出陣列裡的值
 		do{
-			System.out.print(stack.pop());
+			System.out.print(stack.pop());//pop會把第0個值印出再刪掉
 		}while(stack.getSize() != 0);
 		System.out.print("\n");
 		//跑一個迴圈印出拷貝陣列裡的值
