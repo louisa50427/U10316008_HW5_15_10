@@ -14,8 +14,17 @@ public class test{
 			stack1.push('A');
 			stack1.push('C');
 		
-		//比較物件一與物件二
+		//印出2個物件的size
 		System.out.println(stack.getSize());
 		System.out.println(stack1.getSize());
+		//跑一個迴圈印出陣列裡的值
+		do{
+			System.out.print(stack.pop());
+		}while(stack.getSize() != 0);
+		System.out.print("\n");
+		//跑一個迴圈印出拷貝陣列裡的值
+		do{
+			System.out.print(stack1.pop());
+		}while(stack1.getSize() != 0);
 	}
 }
