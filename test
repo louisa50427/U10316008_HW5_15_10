@@ -6,10 +6,16 @@ public class test{
 		
 		//建立及拷貝一個物件
 		MyStack stack = new MyStack();
+			//給值
+			stack.push('A');
+			stack.push('B');
+			stack.push('C');
 		MyStack stack1 = (MyStack) (stack.clone());
+			stack1.push('A');
+			stack1.push('C');
 		
 		//比較物件一與物件二
-		System.out.println(stack == stack1);
-		System.out.println(stack.list == stack1.list);
+		System.out.println(stack.getSize());
+		System.out.println(stack1.getSize());
 	}
 }
